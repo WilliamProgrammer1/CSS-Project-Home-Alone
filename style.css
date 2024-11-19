@@ -1,0 +1,318 @@
+nav ul {
+    display: flex;
+    background-color: #006400;
+    list-style: none;
+    padding: 10px;
+    justify-content: center;
+    border-bottom: 2px solid #8B0000;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    color: #8B0000;
+    background-color: #32CD32;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+img.left {
+    float: left;
+    margin-right: 15px;
+    width: 300px;
+}
+
+img.right {
+    float: right;
+    margin-left: 15px;
+    width: 200px;
+}
+
+.bottomPhoto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.bottomPhoto img {
+    border: 10px solid #32CD32;
+    animation: borderChange 4s infinite linear;
+}
+@keyframes borderChange{
+    0% {
+        border-color: #32CD32;
+    }
+    25% {
+        border-color: #8B0000;
+    }
+    50% {
+        border-color: #32CD32;
+    }
+    75% {
+        border-color: #8B0000;
+    }
+    100% {
+        border-color: #32CD32;
+    }
+}
+
+.rotating-photo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 130px;
+    height: 130px;
+    animation: sideToSide 2s infinite linear;
+}
+.rotating-photo2 {
+    position: absolute;
+    top: 20px;
+    right: 90px;
+    width: 130px;
+    height: 130px;
+    animation: sideToSide 2s infinite linear;
+}
+.rotating-photo3 {
+    position: absolute;
+    top: 20px;
+    right: 160px;
+    width: 130px;
+    height: 130px;
+    animation: sideToSide 2s infinite linear;
+}
+
+@keyframes sideToSide {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(50deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-50deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.centered-text {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+}
+
+.centered-text2 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+}
+
+.animated-title {
+    font-family: "FiraCode", sans-serif;
+    text-align: center;
+    font-size: 40px;
+    display: inline-block;
+    padding: 10px;
+    animation: rotateColors 6s infinite linear;
+}
+
+.animated-title2 {
+    font-family: "FiraCode", sans-serif;
+    text-align: center;
+    padding: 10px;
+    animation: rotateColors 1s infinite linear;
+}
+
+@keyframes rotateColors {
+    0% {
+        color: #8B0000;
+        border-color: #006400;
+    }
+    25% {
+        color: #006400;
+        border-color: #8B0000;
+    }
+    50% {
+        color: #8B0000;
+        border-color: #006400;
+    }
+    75% {
+        color: #006400;
+        border-color: #8B0000;
+    }
+    100% {
+        color: #8B0000;
+        border-color: #006400;
+    }
+}
+
+.rotating-snowflake {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 150px;
+    height: 150px;
+    animation: rotateSnowFlake 5s infinite linear;
+}
+
+.rotating-snowflake2 {
+    position: absolute;
+    top: 50px;
+    right: 170px;
+    width: 100px;
+    height: 100px;
+    animation: rotateSnowFlake 5s infinite linear;
+}
+
+.rotating-snowflake3 {
+    position: absolute;
+    top: 145px;
+    right: 150px;
+    width: 70px;
+    height: 70px;
+    animation: rotateSnowFlake 5s infinite linear;
+}
+
+@keyframes rotateSnowFlake{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg); 
+    }
+}
+
+
+h1, h2, h3 {
+    color: #006400;
+    text-shadow: 1px 1px 5px #FF6347;
+}
+
+.spoiler .spoiler-text {
+    color: transparent;
+    background-color: #FAFAD2;
+    padding: 5px;
+    border: 1px dashed #8B0000;
+}
+
+.spoiler:hover .spoiler-text {
+    color: #006400;
+}
+
+.review {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 10px;
+    background-color: #034F1B;
+    border: 3px solid #8B0000;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+.review a {
+    color: #00e1fe;
+}
+
+.review2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 10px;
+    background-color: #7E121D;
+    border: 3px solid #034F1B;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+.review2 a {
+    color: #00e1fe;
+}
+
+
+.review img {
+    width: 350px;
+    height: 150px;
+    margin-right: 15px;
+    border: 2px solid #8B0000;
+}
+.review2 img {
+    width: 350px;
+    height: 150px;
+    margin-right: 15px;
+    border: 2px solid #034F1B;
+}
+
+figure {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: 2px solid #006400;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: #FFF8DC;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    text-align: center;
+}
+figure img {
+    width: 100%;
+    height: 220px;
+}
+figure iframe {
+    width: 100%;
+    height: 220px;
+}
+figure img:hover {
+    transform: scale(0.9);
+    border-color: #FF6347;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    color: #8B0000;
+}
+
+.external-link {
+    color: #8B0000;
+    text-decoration: underline;
+    font-weight: bold;
+}
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #006400;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#scrollTopBtn:hover {
+    background-color: #8B0000;
+}
+
